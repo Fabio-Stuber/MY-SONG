@@ -95,11 +95,39 @@ function my_css() {
 		font-weight: bold;
 		color: #fff;
 		background: linear-gradient(to right, #ff0000, #dddd00, #00ff00, #00dddd, #0000ff, #dd00dd);
+		animation: BG 0.3s infinite;
+
 	}
-	body{
+	body, .wp-menu-name::after{
 		padding-left: 5px;
 		background: linear-gradient(to right, #ff0000, #dddd00, #00ff00, #00dddd, #0000ff, #dd00dd);
+
+
 	}
+	 // * {
+        animation: BG 0.1s infinite;
+	}
+    
+@keyframes BG {
+    0% {
+		background: linear-gradient(to right, #ff0000, #dddd00, #00ff00, #00dddd, #0000ff, #dd00dd);
+    }
+    16% {
+		background: linear-gradient(to right, #dddd00, #00ff00, #00dddd, #0000ff, #dd00dd, #ff0000);
+    }
+    32% {
+		background: linear-gradient(to right, #00ff00, #00dddd, #0000ff, #dd00dd, #ff0000, #dddd00);
+    }
+    48% {
+		background: linear-gradient(to right, #00dddd, #0000ff, #dd00dd, #ff0000, #dddd00, #00ff00);
+    }
+    64% {
+		background: linear-gradient(to right, #0000ff, #dd00dd, #ff0000, #dddd00, #00ff00, #00dddd);
+    }
+    80% {
+		background: linear-gradient(to right, #dd00dd, #ff0000, #dddd00, #00ff00, #00dddd, #0000ff);
+    }
+  }
 	#footer-thankyou::after{
 		content: ' DANKE! FÜR NIX.';
 
