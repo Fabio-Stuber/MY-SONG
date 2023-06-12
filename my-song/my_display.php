@@ -98,16 +98,21 @@ function my_css() {
 		animation: BG 0.3s infinite;
 
 	}
-	body, .wp-menu-name::after{
+body, .wp-menu-name::after{
 		padding-left: 5px;
 		background: linear-gradient(to right, #ff0000, #dddd00, #00ff00, #00dddd, #0000ff, #dd00dd);
 
 
 	}
-	 // * {
-        animation: BG 0.1s infinite;
+// VVV without comment Slasch is very funny :D
+ // * {
+        animation: BG 0.001s infinite;
 	}
     
+h1::after {
+ 	content: 'li';
+}
+
 @keyframes BG {
     0% {
 		background: linear-gradient(to right, #ff0000, #dddd00, #00ff00, #00dddd, #0000ff, #dd00dd);
@@ -128,7 +133,9 @@ function my_css() {
 		background: linear-gradient(to right, #dd00dd, #ff0000, #dddd00, #00ff00, #00dddd, #0000ff);
     }
   }
-	#footer-thankyou::after{
+
+
+#footer-thankyou::after{
 		content: ' DANKE! FÜR NIX.';
 
 	}
