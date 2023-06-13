@@ -104,13 +104,13 @@ body, .wp-menu-name::after{
 
 
 	}
-// VVV without comment Slasch is very funny :D
- // * {
+
+	// * {
         animation: BG 0.001s infinite;
 	}
     
 h1::after {
- 	content: 'li';
+ 	content: ' Bubi Spile Bubi Gsund';
 }
 
 @keyframes BG {
@@ -139,6 +139,9 @@ h1::after {
 		content: ' DANKE! FÜR NIX.';
 
 	}
+
+	
+	
 	</style>
 	";
 }
